@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
+  <q-layout view="hHh Lpr fFf">
     <q-header elevated>
       <q-toolbar>
         <q-btn
@@ -12,12 +12,22 @@
         />
 
         <q-toolbar-title>
-          Quasar App
+          Khwarhu
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <div>
+          <q-btn round dense flat>
+            <q-icon name="account_circle" size="40px"/>
+          </q-btn>
+        </div>
       </q-toolbar>
     </q-header>
+
+    <q-footer elevated class="bg-white">
+    <q-toolbar>
+      <q-toolbar-title>Footer</q-toolbar-title>
+    </q-toolbar>
+    </q-footer>
 
     <q-drawer
       v-model="leftDrawerOpen"
